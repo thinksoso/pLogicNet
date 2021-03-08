@@ -6,7 +6,7 @@ from utils import augment_triplet, evaluate
 dataset = 'data/FB15k'
 path = './record'
 
-iterations = 2
+iterations = 1
 
 kge_model = 'TransE'
 kge_batch = 1024
