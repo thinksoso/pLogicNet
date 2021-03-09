@@ -29,9 +29,8 @@ if [ $MODE == "train" ]
 then
 
 echo "Start Training......"
-
+# delete the --cuda
 CUDA_VISIBLE_DEVICES=$GPU_DEVICE python -u $CODE_PATH/run.py --do_train \
-    --cuda \
     --do_valid \
     --do_test \
     --data_path $DATA_PATH \
